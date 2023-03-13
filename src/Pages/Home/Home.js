@@ -5,6 +5,12 @@ import "./homestyle.css";
 
 const Home = () => {
   const [dataValue] = useContext(DataBlog);
+const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+    });
+  };
 
     return (
         <>
@@ -52,10 +58,12 @@ const Home = () => {
 
 
                   })
-                    }
+                }
+            
               </div>
+             <hr style={{width:"1300px"}}></hr>
                       <span className="articletext">Latest Article</span><br></br>
-                       <hr ></hr>
+             
               <div className="articles">
                              {
                            dataValue?.filter((item) => item.category === "indianCinema").map((item,index) => {
@@ -84,7 +92,8 @@ const Home = () => {
                           }
                     </div>
         
-                     <div className="add">Advertisement</div>
+              <div className="add">
+                <span className="addtext"> Advertisement</span></div>
                   </div>
             </div>
           <div>
@@ -104,6 +113,7 @@ const Home = () => {
                 )
               })}
             </div>
+            <button onClick={scrollToTop} className="back-to-top">^Go-top^</button>
             <br></br>
             <hr></hr>
             <footer> <pre>--React Blob Project

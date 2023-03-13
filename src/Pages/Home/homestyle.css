@@ -95,7 +95,50 @@
   position: absolute;
   top: 500px;
   right: 10px;
+  animation-name: add;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
+.addtext {
+  position: absolute;
+  animation-name: addtext;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes addtext {
+  0% {
+    top: 0px;
+    left: 40px;
+  }
+  35% {
+    top: 100px;
+    left: 30px;
+  }
+  70% {
+    top: 300px;
+    left: 10px;
+  }
+  100% {
+    top: 480px;
+  }
+}
+
+@keyframes add {
+  0% {
+    background-color: white;
+  }
+  35% {
+    background-color: aqua;
+  }
+  70% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
 .image {
   width: 10rem;
   height: 13rem;
@@ -145,4 +188,16 @@
 .stories {
   display: flex;
   justify-content: space-around;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
 }
