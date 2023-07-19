@@ -5,8 +5,8 @@ const Head = () => {
     return (
         <>
             <div className="home">
-                <span className="the">Best of-</span>
-                <span className="siren"> All Time</span>
+                <span className="the">Best of-All Time</span>
+              
                 <br />
                 <Nav />
 

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "../../Components/HeaderComponent/Head";
 import GameLeft from "./GameLeft";
 import GameRight from "./gameRight";
 
 const Games = () => {
+      useEffect(() => {
+     fetch("http://localhost:3002/games").then((res)=>res.json()).then((res)=>console.log(res))
+ })
     return (
         <>
             <div className="games">
@@ -18,10 +21,10 @@ const Games = () => {
                 </div>
                 <br></br>
             <hr></hr>
-            <footer> <pre>--React Blob Project
+            <footer> <span>--React Blob Project
               @Rights reserved by Praveen Chandra Ravuri
-                                       Prepbytes Coaching Acedamy --
-            </pre></footer>
+                                       prepbytes Coaching Acedamy --
+            </span></footer>
         </div>
         </>
     )

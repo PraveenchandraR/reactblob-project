@@ -21,8 +21,8 @@ function IndianRight() {
                 {
                     dataValue?.filter((item) => item.category === "indianCinema").map((item)=>{
                     return(
-                        <div>
-                              <div  key={item.id} onClick={()=>handleNavgate(item.id,item)} >
+                        <div key={item.id}>
+                              <div   onClick={()=>handleNavgate(item.id,item)} >
                                     
                                         <div className="rightchild" key={item.id} >
                                             <div><img className="imageright" src={item.image} alt="" />  </div>

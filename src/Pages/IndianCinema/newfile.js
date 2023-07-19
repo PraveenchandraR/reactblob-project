@@ -27,8 +27,8 @@ function NewFile()
                           
                             return (
                                 <>
-                                   
-                                        <div key={item.id} onClick={()=>handleNavgate(item.id,item)}>
+                                   <div key={item.id}>
+                                        <div  onClick={()=>handleNavgate(item.id,item)}>
                                     <div  className="leftchild" key={item.id} >
                                             <div><img className="image" src={item.image} alt="cinema"></img> </div> 
                                             <div className="lefttext">
@@ -36,7 +36,7 @@ function NewFile()
                                                 </div>
                                    
                                            
-                                            
+                                            </div>
                                         </div>
                                     </div>
                         

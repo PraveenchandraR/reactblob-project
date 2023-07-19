@@ -97,7 +97,9 @@ function DataBase(props) {
         },
         
        
-        { category: "anime",
+        {
+            category: "anime",
+          
             image: "https://1.bp.blogspot.com/-KGdjogPT0wI/Xq4nMba2BbI/AAAAAAAADBg/tEWBzMzQW1Ayqx0FEtdtwrcOn3zRGuYDQCLcBGAsYHQ/s1600/Death-Note.jpg",
             id:11,
             title: "Death Note",

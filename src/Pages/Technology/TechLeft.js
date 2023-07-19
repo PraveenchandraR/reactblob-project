@@ -13,12 +13,12 @@ function TechLeft() {
 
 
         {
-                        dataValue.filter((item)=> item.category==="technology").map((item,index) => {
+                        dataValue.filter((item)=> item.category==="technology").map((item) => {
                           
                             return (
                                 <>
-                                   <div id='item.id' >
-                                    <div  className="leftchild" key={index} onClick={()=>handleNav(item.id,item)}>
+                                   <div  key={item.id} >
+                                    <div  className="leftchild"  onClick={()=>handleNav(item.id,item)}>
                                             <div><img className="image" src={item.image} alt=""></img> </div> 
                                                 <div className="lefttext">
                                                 <span >{item.title}</span><p className="para">{ item.Description}</p>

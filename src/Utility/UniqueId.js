@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
-
+// import Nav from "../Components/NavBar/Nav";
 import { useLocation } from "react-router-dom";
+import Head from "../Components/HeaderComponent/Head";
 
 
 
@@ -13,6 +14,9 @@ function AccessData() {
     return (
         
         <>
+            <Head />
+            
+            <hr></hr>
             <div className="picture">
                 <div className="details" style={{border:"1px solid blck" }}>
                     <h1>---Details---</h1>

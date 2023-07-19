@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NewFile from "./newfile";
 import Head from "../../Components/HeaderComponent/Head";
 
@@ -6,7 +6,9 @@ import IndianRight from "./IndianRight";
 
 
 function IndianCinema() {
- 
+    useEffect(() => {
+     fetch("http://localhost:3002/indiancinema").then((res)=>res.json()).then((res)=>console.log(res))
+ })
 
     return (
         <div className="india">
@@ -21,10 +23,10 @@ function IndianCinema() {
             </div>
             <br></br>
             <hr></hr>
-            <footer> <pre>--React Blob Project
+            <footer> <span>--React Blob Project
               @Rights reserved by Praveen Chandra Ravuri
-                                       Prepbytes Coaching Acedamy --
-            </pre></footer>
+                                       prepbytes Coaching Acedamy --
+            </span></footer>
         </div>
     );
 }

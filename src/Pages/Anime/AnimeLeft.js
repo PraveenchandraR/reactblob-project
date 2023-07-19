@@ -16,11 +16,11 @@ function AnimeLeft() {
 
 
         {
-                        dataValue?.filter((item)=>item.category==="anime").map((item) => {
+                        dataValue?.filter((item)=>item.category==="anime").map((item,index) => {
                           
                             return (
                                 <>
-                                   <div key={item.id} onClick={()=>handleNavgate(item.id,item)} >
+                                   <div key={index} onClick={()=>handleNavgate(item.id,item)} >
                                     <div  className="leftchild" key={item.id} >
                                             <div><img className="image" src={item.image} alt="" style={{height:"15rem"}}></img> </div> 
                                                 <div className="lefttext">
