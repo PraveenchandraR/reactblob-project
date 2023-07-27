@@ -186,6 +186,11 @@ footer {
     position: relative;
     width: 100%;
   }
+  .rightchild {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   footer pre {
     width: 100%;
   }
