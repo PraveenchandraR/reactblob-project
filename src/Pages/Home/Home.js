@@ -104,7 +104,7 @@ const scrollToTop = () => {
             <div className="stories">
               {dataValue.filter((item) => item.category === "technology").map((item,index) => {
                 return (
-               <div key={index} className="storyslide">
+               <div key={item.index} className="storyslide">
                             <div className="latestbox storybox">
                           
                             <span>{ item.title}</span>

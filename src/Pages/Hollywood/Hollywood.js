@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Head from "../../Components/HeaderComponent/Head";
 
 import "../PageTemplet/page.css";
+import '../../Utility/style.css';
 
 import HollyLeft from "./HollyLeft";
 import HollyRight from "./HollyRight";
@@ -9,7 +10,7 @@ import HollyRight from "./HollyRight";
 
 const Hollywood = () => {
     useEffect(() => {
-        fetch("http://localhost:3002/hollywood").then((res)=>res.json()).then((res)=>console.log(res))
+        fetch("https://reactblobbackend.onrender.com/hollywood").then((res)=>res.json()).then((res)=>console.log(res))
     })
     return (
         <>
@@ -22,9 +23,7 @@ const Hollywood = () => {
             
             <div className="righttemplet"><HollyRight /></div>
                 </div>
-                <br></br>
-                <br></br>
-                <br></br>
+              
                  <hr></hr>
                     <footer> <span>--React Blob Project
                              @Rights reserved by Praveen Chandra Ravuri

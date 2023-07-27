@@ -18,7 +18,7 @@ function GameRight() {
                         return (
                             <>
                            
-                                <div  key={index}>
+                                <div  key={item.index}>
                                      
                                     <div  >
                                     

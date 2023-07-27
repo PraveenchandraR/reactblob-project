@@ -7,7 +7,7 @@ import IndianRight from "./IndianRight";
 
 function IndianCinema() {
     useEffect(() => {
-     fetch("http://localhost:3002/indiancinema").then((res)=>res.json()).then((res)=>console.log(res))
+     fetch("https://reactblobbackend.onrender.com/indiancinema").then((res)=>res.json()).then((res)=>console.log(res))
  })
 
     return (

@@ -6,7 +6,7 @@ import TechRight from "./TechRight";
 
 const Technology = () => {
       useEffect(() => {
-     fetch("http://localhost:3002/technology").then((res)=>res.json()).then((res)=>console.log(res))
+     fetch("https://reactblobbackend.onrender.com/technology").then((res)=>res.json()).then((res)=>console.log(res))
  })
     return (
         <>

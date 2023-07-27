@@ -14,11 +14,11 @@ function HollyRight() {
             <div>
                     <h2 style={{marginTop:"2px"}}>Top Posts</h2>
                 {
-                    dataValue.filter((item)=> item.category=== "hollywood").map((item) => {
+                    dataValue.filter((item)=> item.category=== "hollywood").map((item,index) => {
                         return (
                             <>
                            
-                                <div key={item.id}>
+                                <div key={item.index}>
                                      
                                     
                                     

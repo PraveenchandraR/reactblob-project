@@ -5,7 +5,7 @@ import GameRight from "./gameRight";
 
 const Games = () => {
       useEffect(() => {
-     fetch("http://localhost:3002/games").then((res)=>res.json()).then((res)=>console.log(res))
+     fetch("https://reactblobbackend.onrender.com/games").then((res)=>res.json()).then((res)=>console.log(res))
  })
     return (
         <>

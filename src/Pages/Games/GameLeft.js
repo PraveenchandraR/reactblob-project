@@ -17,7 +17,7 @@ function GameLeft() {
                           
                             return (
                                 <>
-                                   <div key={index} >
+                                   <div key={item.index} >
                                     <div  className="leftchild" onClick={()=>handleNav(item.id,item)} >
                                             <div><img className="image" src={item.image} alt="cinema"></img> </div> 
                                                 <div className="lefttext">
